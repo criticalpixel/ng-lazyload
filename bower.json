@@ -1,0 +1,35 @@
+{
+  "name": "Angular-Base-Restangular",
+  "description": "Angular skeleton app with restangular",
+  "dependencies": {
+    "angular": "1.5.5",
+    "restangular": "1.5.x",
+    "oclazyload" : "latest",
+    "angular-ui-router" : "latest",
+    "requirejs": "2.2.x",
+    "bootstrap": "v4.0.0-alpha.2",
+    "jquery": "latest"
+  },
+  "keywords": [
+    "restangular",
+    "skeleton",
+    "angular",
+    "ADM",
+    "Lazy Loading"
+  ],
+  "authors": [
+    "Thomas Horvath"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "resolutions": {
+    "angular": "1.5.5"
+  }
+}
