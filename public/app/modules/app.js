@@ -1,9 +1,9 @@
-define(['angular'], function (angular) {
+  define(['angular'], function (angular) {
   
-  var app = angular.module('app', ['ui.router', 'oc.lazyLoad', 'uiRouterDecorator']);
+  var app = angular.module('app', ['angular-loading-bar', 'ui.router', 'oc.lazyLoad', 'uiRouterDecorator']);
    
   app.config(function($stateProvider, $locationProvider, $ocLazyLoadProvider) {
-    
+  
     $ocLazyLoadProvider.config({
       loadedModules: ['app'],
       asyncLoader: require

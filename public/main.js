@@ -9,7 +9,9 @@ require.config({
         uiRouterDecorator: 'app/modules/uiRouterDecorator',
         application: 'app/modules/app',
         restAngular: 'lib/restangular/dist/restangular.min',
-        AppController : 'app/controllers/AppController'  
+        AppController : 'app/controllers/AppController',
+        ngLoadingBar : 'lib/angular-loading-bar/build/loading-bar.min',
+        nProgressBar: 'res/js/nprogress'
 	},
 	shim: {
 		'angular': {
@@ -21,18 +23,28 @@ require.config({
 		'application': ['angular'],
 		'uiRouter': ['angular'],
   		'restAngular' : ['angular'],
+  		'ngLoadingBar' : ['angular'],
   		'ocLazyLoad' : ['angular', 'uiRouterDecorator']
 	}
+});
+// Preloader - Maybe
+require([
+	'nProgressBar'
+], function(NProgress){
+	NProgress.start();
 });
 
 require([
 	'angular',
+	'nProgressBar',
 	'application',
+	'ngLoadingBar',
 	'uiRouter',
 	'ocLazyLoad',
 	'restAngular',
 	'AppController'
-], function(angular) {
+], function(angular,NProgress) {
 	'use strict';
 	angular.bootstrap(document, ['app']);
+	NProgress.done();
 });

@@ -1,6 +1,6 @@
 # ng-lazyload
 ##### Angular Seed with requireJS + ocLazyLoad
-###### Load controllers and views dynaimcally when they are needed on the fly.
+###### Load controllers and views dynaimcally when they are needed on the fly. Now includes angular-loading-bar :)
 
 
 ### File Structure

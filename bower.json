@@ -8,7 +8,8 @@
     "angular-ui-router" : "latest",
     "requirejs": "2.2.x",
     "bootstrap": "v4.0.0-alpha.2",
-    "jquery": "latest"
+    "jquery": "latest",
+    "angular-loading-bar": "latest"
   },
   "keywords": [
     "restangular",
