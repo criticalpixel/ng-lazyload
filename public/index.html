@@ -3,18 +3,20 @@
 <html>
 <base href="/">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Angular Skeleton Project</title>
     <link rel="icon" href="res/favicon.ico">
     <!-- SCROLLS -->
     <link rel="stylesheet" href="lib/angular-loading-bar/build/loading-bar.min.css">
     <link rel="stylesheet" href="res/css/main.css">
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
     <!-- SPELLS -->
     <script data-main="main" src="/lib/requirejs/require.js"></script>
 </head>
 
 <body ng-controller="AppController">
-    <div ui-view></div>
+    <div class="appview" ui-view></div>
 </body>
 </html>

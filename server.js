@@ -4,10 +4,11 @@
 
 var express 	= require('express'),				//express
 	app  		= express(),						//define express
+	compression = require('compression'),			// gzip compressor
 	morgan		= require('morgan');				//log req for console (express4)
 // configuration ===============
 
-
+app.use(compression());
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
 // app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));

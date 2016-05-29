@@ -1,35 +1,36 @@
 {
-	"name" : "angular-base",
-	"version" : "1.0.0",
-	"description" : "Angular base project",
-	"author" : "Thomas Horvath",
-	"scripts" : {
-		"start" : "nodemon server.js -w"
-	},
-	"main" : "lib/core.js",
-	"repository" : {
-		"type"  : "git",
-		"url" : "https://github.com/criticalpixel/angular-base-restangular.git"
-	},
-	"private" : true,
-	"keywords" : [
-		"angular",
-		"base",
-		"seed",
-		"skeleton",
-		"start",
-		"project"
-	],
-	"dependencies" : {
-		"nodemon" : "1.9.x",
-		"karma"	  : "0.13.x",
-		"karma-jasmine" : "0.3.x",
-		"karma-chrome-launcher" : "0.2.x",
-		"express" : "4.13.4",
-		"bower" : "1.7.9",
-		"body-parser" : "^1.4.3",
-		"method-override" : "^2.1.3",
-		"mongoose" : "^4.4.12",
-		"morgan" : "^1.1.1"
-	}
+  "name": "angular-base",
+  "version": "1.0.0",
+  "description": "Angular base project",
+  "author": "Thomas Horvath",
+  "scripts": {
+    "start": "nodemon server.js -w"
+  },
+  "main": "lib/core.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/criticalpixel/angular-base-restangular.git"
+  },
+  "private": true,
+  "keywords": [
+    "angular",
+    "base",
+    "seed",
+    "skeleton",
+    "start",
+    "project"
+  ],
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "bower": "1.7.9",
+    "compression": "^1.6.2",
+    "express": "4.13.4",
+    "karma": "0.13.x",
+    "karma-chrome-launcher": "0.2.x",
+    "karma-jasmine": "0.3.x",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1",
+    "nodemon": "1.9.x"
+  }
 }

@@ -7,9 +7,10 @@
     "oclazyload" : "latest",
     "angular-ui-router" : "latest",
     "requirejs": "2.2.x",
-    "bootstrap": "v4.0.0-alpha.2",
     "jquery": "latest",
-    "angular-loading-bar": "latest"
+    "angular-material" : "latest",
+    "angular-loading-bar": "latest",
+    "angular-local-storage" : "latest"
   },
   "keywords": [
     "restangular",

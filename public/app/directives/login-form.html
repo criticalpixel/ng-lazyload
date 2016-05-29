@@ -1,0 +1,32 @@
+<md-card class="loginform">
+     <md-toolbar class="md-card-toolbar">
+      <h2 class="md-toolbar-tools"><span>Login</span></h2>
+    </md-toolbar>
+  <md-card-content>
+    <form name="loginForm" ng-submit="login.proceed()" novalidate="novalidate">
+      <md-input-container class="md-block">
+        <label>Email</label>
+         <input required autofocus type="email" name="email" ng-model="login.email"
+                minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"  />
+        <div ng-messages="loginForm.email.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Invalid email address.
+          </div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Password</label>
+        <input required ng-model="login.password" type="password" name="password" />
+        <div ng-messages="loginForm.password.$error" role="alert">
+          <div ng-message-exp="['required']">
+            Password required.
+          </div>
+        </div>
+      </md-input-container>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button ng-disabled="true">Reset password</md-button>
+        <md-button type="submit" ng-disabled="!loginForm.$valid" class="md-raised md-primary">Login</md-button>
+      </md-card-actions>
+    </form>
+  </md-card-content>
+</md-card>
